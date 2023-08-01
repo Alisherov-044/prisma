@@ -1,0 +1,41 @@
+@import './mixins';
+@import './normalizer';
+
+.card {
+    @include flex(row, center, space-between);
+    width: 400px;
+    height: 50px;
+    padding: 12px 24px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.row {
+    @include flex(row, unset, space-between);
+}
+
+.users__list {
+    @include flex(column, unset, unset, 10px);
+}
+
+form {
+    @include flex(column, unset, unset, 20px);
+}
+
+.backdrop {
+    @include flex(row, center, center);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+
+    .modal {
+        background-color: #fff;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 400px;
+        height: 400px;
+    }
+}

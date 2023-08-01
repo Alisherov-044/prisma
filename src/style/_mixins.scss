@@ -1,0 +1,8 @@
+@mixin flex($dir, $alg, $jst, $gap: 0, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $alg;
+    justify-content: $jst;
+    gap: $gap;
+    flex-wrap: $wrap;
+}
